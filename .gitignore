@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# 本地运行时产物（绝不应提交）
+.workbuddy/
+*.log
+.token_cache
+.live_token
+
+# 编辑器 / 系统
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# 打包产物
+dist/
+*.zip

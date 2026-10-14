@@ -31,7 +31,7 @@ WorkBuddy 就会自动创建一个每日定时任务，到点自动签到、自�
 ### 方式二：一键安装脚本
 
 ```bash
-git clone https://github.com/<你的用户名>/workbuddy-daily-checkin.git /tmp/wb-checkin
+git clone https://github.com/badbyeseason/workbuddy-auto-checkin.git /tmp/wb-checkin
 cd /tmp/wb-checkin
 python install.py            # Windows: py -3 install.py
 ```
@@ -41,7 +41,7 @@ python install.py            # Windows: py -3 install.py
 ### 方式三：手动放置
 
 ```bash
-git clone https://github.com/<你的用户名>/workbuddy-daily-checkin.git \
+git clone https://github.com/badbyeseason/workbuddy-auto-checkin.git \
   ~/.workbuddy/skills/workbuddy-daily-checkin
 ```
 

@@ -6,6 +6,9 @@
 [![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20Linux%20%7C%20macOS-blue)](#平台支持)
 [![Python](https://img.shields.io/badge/python-3.8%2B-blue)](https://www.python.org/)
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
+[![Release](https://img.shields.io/github/v/release/badbyeseason/workbuddy-auto-checkin)](../../releases/latest)
+
+**📦 [点此免登录下载最新版 zip](../../releases/latest)**（不想用 git 的话，下完直接看下面的「方式一」）
 
 ---
 
@@ -31,14 +34,16 @@ WorkBuddy 就会自动创建一个每日定时任务，到点自动签到、自�
 ### 方式二：一键安装脚本
 
 ```bash
-git clone https://github.com/badbyeseason/workbuddy-auto-checkin.git /tmp/wb-checkin
-cd /tmp/wb-checkin
+git clone https://github.com/badbyeseason/workbuddy-auto-checkin.git wb-checkin
+cd wb-checkin
 python install.py            # Windows: py -3 install.py
 ```
 
 脚本会自动：定位技能目录 → 备份同名旧技能 → 复制文件 → 运行自检 → 打印下一步。
 
-### 方式三：手动放置
+> 已经下过 zip 的话，跳过 `git clone`，直接进解压目录执行 `python install.py` 即可。
+
+### 方式三：手动放置（不用脚本）
 
 ```bash
 git clone https://github.com/badbyeseason/workbuddy-auto-checkin.git \
@@ -46,6 +51,13 @@ git clone https://github.com/badbyeseason/workbuddy-auto-checkin.git \
 ```
 
 Windows 对应路径为 `%USERPROFILE%\.workbuddy\skills\workbuddy-daily-checkin`。
+
+> **不确定技能目录在哪？** 别猜。把解压后的文件夹路径直接告诉 WorkBuddy，让它来装：
+>
+> > 我解压了 workbuddy-daily-checkin 技能包，路径是 `C:\你的\解压\路径\workbuddy-daily-checkin`。
+> > 请帮我安装到 WorkBuddy 技能目录并跑一次自检。
+>
+> 详见 [安装与分享.md](安装与分享.md)。
 
 ### 安装后自检
 
